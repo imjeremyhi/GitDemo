@@ -16,6 +16,8 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.layout.BackgroundFill;
+import javafx.scene.layout.BackgroundImage;
 import javafx.stage.Stage;
 
 /**
@@ -24,6 +26,7 @@ import javafx.stage.Stage;
  */
 public class FXMLDocumentController implements Initializable {
 
+    
     @FXML
     private void handleButton1(ActionEvent event) throws IOException {
         System.out.println("Set goals");
