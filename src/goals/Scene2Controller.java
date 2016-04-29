@@ -37,6 +37,22 @@ public class Scene2Controller implements Initializable {
     @FXML
     private TextArea p;
 
+    public TextArea getW() {
+        return w;
+    }
+
+    public TextArea getO1() {
+        return o1;
+    }
+
+    public TextArea getO2() {
+        return o2;
+    }
+
+    public TextArea getp() {
+        return p;
+    }
+
     @FXML
     private void handleButtonCancel(ActionEvent event) throws IOException {
         System.out.println("Cancel");
@@ -48,8 +64,7 @@ public class Scene2Controller implements Initializable {
     }
 
     @FXML
-    private void handleButtonSubmit(ActionEvent event) 
-        throwss IOException{
+    private void handleButtonSubmit(ActionEvent event) throws IOException {
         System.out.println("Goal has been saved");
 
     }

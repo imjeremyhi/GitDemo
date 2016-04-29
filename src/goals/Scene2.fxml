@@ -11,7 +11,7 @@
    <children>
       <ScrollPane layoutX="85.0" layoutY="100.0" prefHeight="113.0" prefWidth="655.0">
          <content>
-            <TextArea prefHeight="111.0" prefWidth="653.0" />
+            <TextArea fx:id="w" prefHeight="111.0" prefWidth="653.0" />
          </content>
       </ScrollPane>
       <Label layoutX="85.0" layoutY="73.0" prefHeight="27.0" prefWidth="655.0" text="Wish: Something you really want to accomplish. Exciting, challenging and realistic " />
@@ -19,21 +19,22 @@
       <Label layoutX="88.0" layoutY="423.0" prefHeight="37.0" prefWidth="661.0" text="Obstacle: The personal obstacles that prevent you from accomplishing your goal" />
       <ScrollPane layoutX="85.0" layoutY="277.0" prefHeight="113.0" prefWidth="655.0">
          <content>
-            <TextArea prefHeight="111.0" prefWidth="653.0" />
+            <TextArea fx:id="o1" prefHeight="111.0" prefWidth="653.0" />
          </content>
       </ScrollPane>
       <ScrollPane layoutX="88.0" layoutY="460.0" prefHeight="113.0" prefWidth="655.0">
          <content>
-            <TextArea prefHeight="111.0" prefWidth="653.0" />
+            <TextArea fx:id="o2" prefHeight="111.0" prefWidth="653.0" />
          </content>
       </ScrollPane>
       <ScrollPane layoutX="85.0" layoutY="709.0" prefHeight="113.0" prefWidth="655.0">
          <content>
-            <TextArea prefHeight="111.0" prefWidth="653.0" />
+            <TextArea fx:id="p" prefHeight="111.0" prefWidth="653.0" />
          </content>
       </ScrollPane>
       <Label layoutX="88.0" layoutY="610.0" prefHeight="37.0" prefWidth="661.0" text="Plan: What can you do to overcome your obstacle?  Name one action you can take" />
       <Label layoutX="88.0" layoutY="647.0" prefHeight="37.0" prefWidth="661.0" text="or thought you can have. Make an if/then plan and imagine it." />
-      <Button layoutX="361.0" layoutY="838.0" mnemonicParsing="false" text="Save Goal" />
+      <Button layoutX="272.0" layoutY="838.0" mnemonicParsing="false" text="Save Goal" />
+      <Button fx:id="cancel" layoutX="419.0" layoutY="838.0" mnemonicParsing="false" onAction="#handleButtonCancel" text="Cancel" />
    </children>
 </AnchorPane>

@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.canvas.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.text.*?>
 <?import java.lang.*?>
@@ -8,20 +10,26 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="606.0" prefWidth="921.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="goals.FXMLDocumentController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="605.0" prefWidth="855.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="goals.FXMLDocumentController">
     <children>
-      <ImageView fitHeight="39.0" fitWidth="57.0" layoutX="488.0" layoutY="24.0">
+      <ImageView fitHeight="104.0" fitWidth="149.0" layoutX="352.0" layoutY="70.0">
          <image>
             <Image url="@sparrow0.jpg" />
          </image>
+         <effect>
+            <Blend />
+         </effect>
       </ImageView>
-      <Button layoutX="749.0" layoutY="66.0" mnemonicParsing="false" text="View goals" />
-      <TextArea layoutX="174.0" layoutY="140.0" prefHeight="200.0" prefWidth="574.0" text="Welcome to the Goal Tracker application designed to help you to&#10;better manage and achieve your goals. " />
+      <Button layoutX="586.0" layoutY="72.0" mnemonicParsing="false" prefHeight="52.0" prefWidth="137.0" text="View goals" />
+      <TextArea editable="false" layoutX="158.0" layoutY="174.0" prefHeight="64.0" prefWidth="565.0" text="Welcome to the Goal Tracker application designed to help you to&#10;better manage and achieve your goals. ">
+         <font>
+            <Font name="Times New Roman" size="19.0" />
+         </font></TextArea>
       <Label layoutX="352.0" layoutY="20.0" prefHeight="46.0" prefWidth="157.0" text="GoalTracker">
          <font>
             <Font size="28.0" />
          </font>
       </Label>
-      <Button layoutX="67.0" layoutY="66.0" mnemonicParsing="false" onAction="#handleButton1" text="Create goals" />
+      <Button layoutX="158.0" layoutY="72.0" mnemonicParsing="false" onAction="#handleButton1" prefHeight="52.0" prefWidth="129.0" text="Create goals" />
    </children>
 </AnchorPane>
