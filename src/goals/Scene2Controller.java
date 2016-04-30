@@ -66,6 +66,10 @@ public class Scene2Controller implements Initializable {
     @FXML
     private void handleButtonSubmit(ActionEvent event) throws IOException {
         System.out.println("Goal has been saved");
+        Parent root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
+        Scene scene = new Scene(root);
+        Stage stage = Goals.getStage();
+        stage.setScene(scene);
 
     }
 
