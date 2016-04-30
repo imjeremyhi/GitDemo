@@ -7,7 +7,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="919.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="goals.Scene2Controller">
+<AnchorPane id="AnchorPane" prefHeight="900.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="goals.Scene2Controller">
    <children>
       <ScrollPane layoutX="85.0" layoutY="100.0" prefHeight="113.0" prefWidth="655.0">
          <content>
@@ -34,7 +34,7 @@
       </ScrollPane>
       <Label layoutX="88.0" layoutY="610.0" prefHeight="37.0" prefWidth="661.0" text="Plan: What can you do to overcome your obstacle?  Name one action you can take" />
       <Label layoutX="88.0" layoutY="647.0" prefHeight="37.0" prefWidth="661.0" text="or thought you can have. Make an if/then plan and imagine it." />
-      <Button layoutX="272.0" layoutY="838.0" mnemonicParsing="false" text="Save Goal" />
+      <Button layoutX="272.0" layoutY="838.0" mnemonicParsing="false" onAction="#handleButtonSubmit" text="Save Goal" />
       <Button fx:id="cancel" layoutX="419.0" layoutY="838.0" mnemonicParsing="false" onAction="#handleButtonCancel" text="Cancel" />
    </children>
 </AnchorPane>
