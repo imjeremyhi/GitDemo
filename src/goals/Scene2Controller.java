@@ -5,6 +5,8 @@
  */
 package goals;
 
+import java.io.BufferedWriter;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -66,13 +68,29 @@ public class Scene2Controller implements Initializable {
     @FXML
     private void handleButtonSubmit(ActionEvent event) throws IOException {
         System.out.println("Goal has been saved");
+        this.writeGoal();
         Parent root = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
         Scene scene = new Scene(root);
         Stage stage = Goals.getStage();
         stage.setScene(scene);
+        
 
     }
 
+    @FXML
+    public void writeGoal(){
+   try (BufferedWriter bw = new BufferedWriter(new FileWriter("Goals.txt", true))) {
+        bw.write(w.getText());
+        bw.newLine();
+        bw.write(o1.getText());
+        bw.newLine();
+        bw.write(o2.getText());
+        bw.newLine();
+        bw.write(p.getText());
+    } catch (IOException e) {
+        e.printStackTrace();
+    }
+    }
     /**
      * Initializes the controller class.
      */
