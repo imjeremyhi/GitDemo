@@ -37,6 +37,14 @@ public class FXMLDocumentController implements Initializable {
 
     }
 
+    @FXML
+    private void handleButton2(ActionEvent event) throws IOException {
+        System.out.println("View goals");
+        Parent root = FXMLLoader.load(getClass().getResource("ViewGoals.fxml"));
+        Scene scene = new Scene(root);
+        Stage stage = Goals.getStage();
+        stage.setScene(scene);
+    }
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
