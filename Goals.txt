@@ -1,0 +1,6 @@
+
+Wish: Show how git works
+Outcome: Git works
+Obstacle: We need to make a video demonstration. 
+Upload to github 	
+Plan: Record the video 
