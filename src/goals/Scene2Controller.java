@@ -80,13 +80,14 @@ public class Scene2Controller implements Initializable {
     @FXML
     public void writeGoal(){
    try (BufferedWriter bw = new BufferedWriter(new FileWriter("Goals.txt", true))) {
-        bw.write(w.getText());
-        bw.newLine();
-        bw.write(o1.getText());
-        bw.newLine();
-        bw.write(o2.getText());
-        bw.newLine();
-        bw.write(p.getText());
+       bw.newLine();
+       bw.write("Wish"+": "+w.getText());
+       bw.newLine();
+       bw.append("Outcome" + ": "+o1.getText());
+       bw.newLine();
+       bw.write("Obstacle"+": "+o2.getText());
+       bw.newLine();
+       bw.write("Plan"+": "+p.getText());
     } catch (IOException e) {
         e.printStackTrace();
     }

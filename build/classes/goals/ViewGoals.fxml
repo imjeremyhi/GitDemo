@@ -1,12 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import java.util.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="goals.ViewGoalsController">
-    
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="goals.ViewGoalsController">
+   <children>
+      <TextArea fx:id="goal" layoutX="59.0" layoutY="58.0" prefHeight="519.0" prefWidth="506.0" />
+      <Label layoutX="244.0" layoutY="18.0" prefHeight="26.0" prefWidth="136.0" text="Your Goals">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Label>
+      <Button layoutX="211.0" layoutY="606.0" mnemonicParsing="false" onAction="#handleButton1" text="Back to Main Menu" />
+   </children>
 </AnchorPane>
